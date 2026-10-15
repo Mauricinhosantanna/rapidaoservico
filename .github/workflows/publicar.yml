@@ -52,7 +52,7 @@ jobs:
       - name: Subir por FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVIDOR }}
+          server: 147.93.39.32
           username: ${{ secrets.FTP_USUARIO }}
           password: ${{ secrets.FTP_SENHA }}
           local-dir: ./dist/apps/web/client/
