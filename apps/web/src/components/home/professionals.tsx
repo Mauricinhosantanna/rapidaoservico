@@ -1,0 +1,9 @@
+import { ArrowUpRight, Check, TrendingUp, UsersRound } from 'lucide-react';
+import { APP_URL } from '@/data/rapidao';
+
+export function Professionals() {
+  return <section className="professionals-section section-rail" id="profissionais">
+    <div className="professional-story"><span className="eyebrow">PARA QUEM FAZ ACONTECER</span><h2>Seu talento.<br />Mais clientes.<br /><span>Novas possibilidades.</span></h2><p>Você é bom no que faz. O Rapidão ajuda quem precisa do seu serviço a encontrar você.</p><ul><li><Check size={18} /> Mais visibilidade para o seu trabalho</li><li><Check size={18} /> Negociação direta, sem fidelidade</li><li><Check size={18} /> Uma plataforma simples e segura</li></ul><a href={APP_URL} className="button button-blue">Cadastre-se como profissional <ArrowUpRight size={18} /></a></div>
+    <div className="professional-offer"><div className="offer-top"><UsersRound size={28} /><span>JUNTOS, FAZEMOS A DIFERENÇA.</span><TrendingUp size={27} /></div><div className="offer-body"><span className="eyebrow">CONDIÇÕES ESPECIAIS DE LANÇAMENTO</span><h3>Comece com<br /><strong>cadastro gratuito.</strong></h3><p>Sem mensalidade até 31 de dezembro de 2026. A partir de janeiro de 2027, R$ 4,50 por mês.</p><div className="pricing-row"><div><span>ATÉ 31 DE DEZEMBRO DE 2026</span><strong>Grátis</strong><p>Sem mensalidade</p></div><div><span>A PARTIR DE JANEIRO DE 2027</span><strong>R$ 4,50<small>/mês</small></strong><p>Manutenção da plataforma</p></div></div><div className="commission"><span>Taxa bancária sobre o valor do serviço</span><strong>5%</strong></div><p className="offer-disclaimer">Taxa bancária de 5% sobre o valor do serviço para manutenção da operação. Confira no aplicativo as regras completas, a vigência e os valores antes de aderir. Toda contratação e pagamento acontecem no app.</p></div></div>
+  </section>;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "rapidao-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix apps/web",
+    "build": "npm run build --prefix apps/web",
+    "typecheck": "npm run typecheck --prefix apps/web"
+  },
+  "workspaces": [
+    "apps/web"
+  ]
+}
